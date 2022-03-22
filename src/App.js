@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import * as api from './services/API';
+import * as api from './services/api';
 
 import './App.css';
 
