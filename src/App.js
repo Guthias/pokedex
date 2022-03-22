@@ -1,7 +1,17 @@
+import React, { useEffect } from 'react';
+import * as api from './services/API';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const fetchPokemonList = async () => {
+      const data = await api.getPokemonList();
+      console.log(data);
+    }
+    fetchPokemonList();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
